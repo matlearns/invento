@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Payment Accounts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="max-w-4xl w-full bg-white shadow-lg rounded-2xl p-10">
+    <h1 class="text-2xl font-bold text-center mb-8 text-gray-800">Invento Dashboard</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Purchases Section -->
+      <div class="bg-red-500 text-white rounded-xl p-6 shadow-md">
+        <h2 class="text-xl font-bold mb-4">Purchases</h2>
+        <ul class="space-y-2">
+          <li><a href="{% url 'payment_accounts' %}" class="hover:underline">Payment Accounts</a></li>
+          <li><a href="#" class="hover:underline">Suppliers</a></li>
+          <li><a href="#" class="hover:underline">Items Unit</a></li>
+          <li><a href="#" class="hover:underline">Purchase Invoices</a></li>
+          <li><a href="#" class="hover:underline">Purchase Detail</a></li>
+        </ul>
+      </div>
+
+      <!-- Selling Section -->
+      <div class="bg-green-600 text-white rounded-xl p-6 shadow-md">
+        <h2 class="text-xl font-bold mb-4">Selling</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Customer Record</a></li>
+          <li><a href="#" class="hover:underline">Sells Record</a></li>
+          <li><a href="#" class="hover:underline">Credit Sell</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
